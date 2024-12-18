@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Musea</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/all.min.js"></script>
+</head>
+<body id="js--body">
+    <header class="header">
+        <h1 class="headerTitle">Japan Musea</h1>
+        <button id="js--menu" class="headerMenu">menu</button>
+    </header>
+    <nav id="js--nav" class="mainNav">
+        <ul class="mainNavList">
+            <li class="mainNavListItem">
+                <a href="">Home</a>
+            </li>
+            <li class="mainNavListItem">
+                <a href="">collection #1</a>
+            </li>
+            <li class="mainNavListItem">
+                <a href="">collection #2</a>
+            </li>
+            <li class="mainNavListItem">
+                <a href="">collection #3</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" id="menuCheckbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <!-- 
+            We can use a label here to close upon click (when doing same page navigation), this
+            does require a slight bit of JS.
+            -->
+            <li>
+              <a href="#">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+              </a>
+            </li>
+            
+            <!-- These just close the menu -->
+            <li><label for="menuCheckbox"><a>Info</a></label></li>
+            <li><label for="menuCheckbox"><a>Contact</a></label></li>
+            
+            <!-- Or just use regular URLs -->
+            <li>
+              <a>Show me more</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    <main>
+        <figure class="bigFigure">
+            <img src="img/bannerPhoto.jpeg" alt="A temple above a city with Mt. Fuji in the background.">
+        </figure>
+        <section class="collections">
+            <h2 class="collectionsTitle">collections</h2>
+            <ul class="collectionsList">
+                <li class="collectionsListItem"><img src="img/backStreet.jpg" alt="A back alley of Japan"></li>
+                <li class="collectionsListItem"><img src="img/blossomTower.jpg" alt="A tower springing up from cherry blossoms"></li>
+                <li class="collectionsListItem"><img src="img/bunchaTorii.jpg" alt="A hallway made of Torii gates"></li>
+                <li class="collectionsListItem"><img src="img/toriiLake.jpg" alt="A single Torii gate on a still lake"></li>
+                <li class="collectionsListItem"><img src="img/villageStreet.jpg" alt="A street of a rural village"></li>
+                <li class="collectionsListItem"><img src="img/whiteTemple.jpg" alt="A white temple above white cherry blossoms"></li>
+            </ul>
+        </section>
+        <section class="info">
+            <div class="block">
+            <h2 class="infoTitle">Why</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam labore eligendi voluptates fugiat quod, dolorum quo illum perspiciatis, sint eum totam minima. Impedit recusandae libero iusto totam, modi architecto iure!
+            Aliquid minima modi eaque, explicabo aliquam velit commodi ipsam corporis ullam quam a ex voluptas expedita recusandae perspiciatis voluptate mollitia iusto vero est molestiae quidem nesciunt. Veritatis vero eveniet magni.
+            Vitae provident magni nihil eos, dicta modi molestiae mollitia fugit pariatur, dolorum aut dolorem iure cum, consequuntur distinctio voluptatum dolores dolore! Suscipit corporis error tempora voluptates facilis unde aliquid vitae?
+            Sint in illum dicta atque, eius inventore delectus debitis soluta, obcaecati omnis recusandae ipsa suscipit dolorum? Dolore numquam in laudantium aut suscipit voluptatibus laborum iste omnis amet, illo alias minus.
+            Commodi molestiae, maiores, aliquid quasi totam ducimus doloremque delectus sequi sit amet natus eligendi id labore iusto. Error at commodi explicabo incidunt et, nemo, aliquam neque nisi sed, sunt dignissimos.</p>
+            </div>
+            <div class="block">
+            <h2 class="infoTitle">What</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius veritatis, eum sint at ea iste alias, dolores quibusdam accusamus tempora ut rerum dolorum itaque voluptatem delectus! Numquam ipsa incidunt eveniet?
+            Repellendus deserunt, aliquam praesentium voluptatum iusto perspiciatis sit, quaerat asperiores molestiae eum culpa ab reprehenderit, doloremque dicta harum dignissimos vitae unde quos natus possimus ad! Quod nesciunt qui tempora illo.
+            Totam maxime impedit aspernatur maiores nostrum corrupti atque neque ipsa, cum porro modi reiciendis in necessitatibus obcaecati quam perferendis velit praesentium mollitia excepturi incidunt asperiores repudiandae. Ut vel minus quis.
+            Sunt quos possimus illo recusandae neque ullam qui quibusdam nostrum sapiente modi vero, non laborum porro quo illum reiciendis odit vitae nisi ea iure accusantium quasi veritatis omnis. Nihil, quod.
+            Cupiditate quaerat quas officia molestiae repellat rem dignissimos nesciunt voluptate non eligendi modi similique expedita placeat, culpa sequi saepe quis? Quam adipisci ipsam laboriosam ratione culpa similique, magni provident alias.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerDiv1">
+            <p>123 fake Ave.</p>
+        </div>
+        <div class="footerDiv2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="footerDiv3">
+            <p>openingstijden:</p>
+            <p>ma-vr: 12:00-21:00</p>
+            <p>za-zo: 10:00-20:00</p>
+        </div>
+    </footer>
+</body>
+</html>
